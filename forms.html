@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>E2 Computer: Espeloa</title>
+    <meta name="description" content="This is a website created by Stephanie Jean D. Espeloa, it includes her Autobiography and Lab Exercises">
+    <link rel="stylesheet" href="forms.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h3>E2-COMPUTER</h3>
+        </header>
+
+
+        <nav>
+            <a href="index.html">HOME</a>
+            <a href="autobiography.html">AUTOBIOGRAPHY</a>
+            <a href="article.html">ARTICLE</a>
+            <a href="blog.html">BLOG</a>
+            <a href="forms.html">FORM</a>
+        </nav>
+
+        <main>
+            <img src="media/play.gif" alt="Shrek" class="logo">
+            <div class="icon">
+                <img src="media/play2.png" alt="Shrek" id="icon">
+            </div>
+
+            <audio id="music" controls loop hidden>
+                <source src="media/espeloa.mp3" type="audio/mp3">
+            </audio>
+            
+<script>
+    var music = document.getElementById("music");
+    var icon = document.getElementById("icon");
+
+    icon.onclick = function(){
+        music.play();
+    }
+</script>
+
+            <form action="index.html" method="post">
+                <div class="login">
+                    <label for="Email"><b>Email Address</b></label><br>
+                    <input type= "email" id="Email" placeholder="Example@email.com" required><br>
+                    <label for="Password"><b>Password</b></label><br>
+                    <input type="password" id="Password" placeholder="Password" minlength="8" required>
+                </div>            
+    
+                <div class="info">
+                    <label for="Full Name"><b>Full Name</b></label><br>
+                    <input type="text" id="Full Name" placeholder="Full Name" required><br>
+                </div>
+
+                <div class="login">
+                    <label for="Question"><b>Name your favorite Barbie movie and explain why it is special to you.</b></label><br>
+                    <input type="text" id="Question" placeholder="Your Answer" required><br>
+                </div>
+    
+                <div class="info">
+                    <label for="List"><b>What is your favorite Barbie profession or career?</b></label><br>
+                    <select id="List">
+                        <option value="Astronaut">Astronaut</option>
+                        <option value="Veterinarian">Veterinarian</option>
+                        <option value="Fashion Designer">Fashion Designer</option>
+                        <option value="President">President</option>
+                    required </select>
+                </div>
+    
+                <div class="info">
+                    <label for="Era"><b>Which era of Barbie do you like the most?</b></label><br>
+    
+                    <input type="radio" id="1959-1960s (Vintage Barbie)" value="1959-1960s (Vintage Barbie)" name="Era">
+                    <label for="1959-1960s (Vintage Barbie)">1959-1960s (Vintage Barbie)</label>
+                    <br>
+                    <input type="radio" id="Fin" value="1970s-1980s (Disco and Superstar Barbie)" name="Era">
+                    <label for="1970s-1980s (Disco and Superstar Barbie)">1970s-1980s (Disco and Superstar Barbie)</label>
+                    <br>
+                    <input type="radio" id="1990s-2000s (Modern Barbie Classics)" value="1990s-2000s (Modern Barbie Classics)" name="Era">
+                    <label for="1990s-2000s (Modern Barbie Classics)">1990s-2000s (Modern Barbie Classics)</label>
+                    <br>
+                    <input type="radio" id="2010s-Present (Diverse and Career-focused Barbie)" value="2010s-Present (Diverse and Career-focused Barbie)" name="Era">
+                    <label for="2010s-Present (Diverse and Career-focused Barbie)">2010s-Present (Diverse and Career-focused Barbie)</label>
+                </div>
+    
+                <div class="info">
+                    <label for="select"><b>Which of these Barbie-related items do you own or wish to own?</b></label><br>
+                    <input type="checkbox" id="Barbie Dreamhouse" name="select">
+                    <label for="Barbie Dreamhouse">Barbie Dreamhouse</label><br>
+                    <input type="checkbox" id="Barbie Camper Van" name="select">
+                    <label for="Barbie Camper Van">Barbie Camper Van</label><br>
+                    <input type="checkbox" id="Barbie Fashion Studio" name="select">
+                    <label for="Barbie Fashion Studio">Barbie Fashion Studio</label><br>
+                    <input type="checkbox" id="Barbie Dolls of the World Collection" name="select">
+                    <label for="Barbie Dolls of the World Collection">Barbie Dolls of the World Collection</label>
+                </div>
+    
+                <div class="done">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </main>
+
+        <footer>
+            <p2>
+                <b>Sorsogon College of Criminology Inc.
+                <br>
+                3928, Rizal St, Sorsogon City, Sorsogon
+                <br>
+                S.Y. 2024-2025</b>
+                <br>
+                Contact: <b>+63 929-756-6078</b><br>
+                <a href="mailto:sespeloa@gmail.com">sespeloa@gmail.com</a>
+            </p2>
+        </footer>
+    </div>   
+    
+</body>
+</html>
